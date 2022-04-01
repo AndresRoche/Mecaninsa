@@ -1,6 +1,14 @@
 :root{
   --height-de-background-images : 120vh;
   --size-titulo-heade: 2rem;
+
+
+  /* Paleta de Colores */
+  --yellow: #FFF25E;
+  --yellowOragen : #E8CD56;
+  --oragen: #FED36A;
+  --oragen2: #E8B056;
+  --oragen3: #FFAC5E;
 }
 
 
@@ -447,14 +455,16 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
 
 .service__grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   grid-template-rows: repeat(auto-fit,minmax(350px,1fr));
+  grid-gap: 10px;
 }
 
 
 .service__img{
   height: 50%
 }
+
 
 .service__title{
   font-weight: bold;
@@ -465,6 +475,28 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
 .service__paraf{
   padding: 0 1rem;
 }
+
+.service__btn--content{
+  margin: 5rem 0;
+}
+
+.service__btn{
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 15rem;
+  font-size: 2rem;
+  outline: solid 5px var(--oragen2);
+  background-color: transparent;
+  color: var(--oragen3);
+  transition: background color .5s ease;
+}
+
+.service__btn:hover{
+  background-color: var(--oragen2);
+  color: #fff;
+}
+
+
 
 /* footer */
 .footer{
