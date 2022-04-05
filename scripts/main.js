@@ -27,22 +27,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// const productosTitulo = document.querySelector('.productos__titulo');
-// const productosArct = document.querySelectorAll('.productos__arct');
-// const serviceHeaderContent = document.querySelector('.serviceHeader__content');
-// const serviceTitulo = document.querySelector('.service__titulo');
-// const serviceItems = document.querySelectorAll('.service__items');
-//
-//
-// let animationUser = [];
-// animationUser.push(productosTitulo);
-// for(let produc of productosArct){
-//   animationUser.push(produc);
-// }
-// animationUser.push(serviceHeaderContent);
-// animationUser.push(serviceTitulo);
-// for(let service of serviceItems){
-//   animationUser.push(service);
-// }
-//
-// console.log(animationUser);
+const productosTitulo = document.querySelector('.productos__titulo');
+const serviceHeaderContent = document.querySelector('.serviceHeader__content');
+const serviceTitulo = document.querySelector('.service__titulo');
+
+
+let animationUser = [];
+animationUser.push(productosTitulo);
+animationUser.push(serviceHeaderContent);
+animationUser.push(serviceTitulo);
+
+
+const animacionFunction = (entries) => {
+  const entry = entries[0];
+  if(entry.isIntersecting){
+    entry.target.classList.add('animateDown');
+  }
+}
+
+let observer = new IntersectionObserver(animacionFunction,{
+  rootMargin: '20px',
+  threshold: 0
+})
+
+animationUser.forEach(anima => {
+  observer.observe(anima);
+});
