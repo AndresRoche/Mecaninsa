@@ -1,23 +1,24 @@
-$(window).on('load', function(){
-  $('.title').css({ 'top': 90+'px', 'opacity': 1 });
-  $('.text').css({ 'opacity': 1 });
-  $('.more').css({ 'opacity': 1, 'bottom': 90+'px' });
-});
-$('#header-carousel').on('slid.bs.carousel', function () {
-  $('.title').css({ 'top': 90+'px', 'opacity': 1 });
-  $('.text').css({ 'opacity': 1 });
-  $('.more').css({ 'opacity': 1, 'bottom': 90+'px' });
-});
-$('#header-carousel').on('slide.bs.carousel', function () {
-  $('.title').css({ 'top': 0+'px', 'opacity': 0 });
-  $('.text').css({ 'opacity': 0 });
-  $('.more').css({ 'opacity': 0, 'bottom': 0+'px' });
-});
-function carouselFix() {
-  $(".carousel.slide").carousel("pause");
-  $('.carousel.slide .item').removeClass('active');
-  $('.carousel.slide').find('.item:first').addClass('active');
-}
-$(document).ready(function() {
-  carouselFix();
-});
+'use strict';
+
+//Script para la animacion de carrusel
+
+const desplaza = document.querySelectorAll('.carrusel__desplazamiento');
+let elementoAnterior;
+const headerNavigator = document.querySelectorAll('.carrusel__navigatorItem');
+
+desplaza.forEach( itemDesplaza => {
+
+  itemDesplaza.addEventListener('click', (event) => {
+
+    let element = event.target;
+
+    let haciaDonde = element.parentElement.getAttribute('href');
+    let ani = document.querySelector(haciaDonde);
+    ani.classList.add('anima');
+    elementoAnterior = element.parentElement
+    .parentElement
+    .parentElement;
+    elementoAnterior.classList.remove('anima');
+
+  })
+})
