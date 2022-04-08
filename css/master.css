@@ -146,7 +146,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
   text-align: center;
   padding: 1rem 0;
   display: block;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .nav-links__a--mobile:hover{
@@ -159,7 +159,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
    top: 49px;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 678px){
   .bars__icono{
     display: none;
   }
@@ -168,7 +168,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
     position: static;
     transform: translate(0,0);
     display: inline-block;
-    width: 50%;
+    width: 60%;
   }
   .nav-links__ul{
     display: flex;
@@ -197,9 +197,6 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
   .nav-links__a{padding: 0 1rem;}
 }
 
-@media screen and (min-width: 750px){
-  .nav-links__a{padding: 0 2rem;/* height: 100%; */}
-}
 /* Header */
 
 
@@ -524,6 +521,7 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
   padding: 1rem;
   line-height: 1.5;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 
@@ -614,6 +612,56 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
 
 
 
+/* nosotros */
+.nosotros{
+  margin: 3rem 0;
+}
+.nosotros__h2{
+  text-align: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.nosotros__imgContent,
+.nosotros__img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.serviceHeader--nosotros{
+  height: 150vh;
+}
+
+@media screen and (min-width: 678px){
+  .nosotros__flex{
+    display: flex;
+    justify-content: space-around;
+  }
+  .nosotros__imgContent{
+    margin: 0 3rem;
+  }
+
+  .serviceHeader--nosotros{
+    height: 99vh;
+  }
+}
+
+.nosotros__content{
+  margin-bottom: 3rem;
+}
+
+.nosotros__titulo{
+  font-size: 2rem;
+}
+.nosotros__p{
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+
+
+
 /* contacto */
 .contacto{
   display: flex;
@@ -678,6 +726,9 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
   background-color: var(--oragen3);
   color: #fff;
 }
+
+
+
 
 /* animacion */
 
