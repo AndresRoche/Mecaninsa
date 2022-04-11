@@ -4,11 +4,11 @@
 
 
   /* Paleta de Colores */
-  --yellow: #FFF25E;
-  --yellowOragen : #E8CD56;
-  --oragen: #FED36A;
-  --oragen2: #E8B056;
-  --oragen3: #FFAC5E;
+  --yellow: #FFC942;
+  --yellowOragen : #FFB442;
+  --oragen: #FE9E50;
+  --oragen2: #FF7942;
+  --oragen3: #FF5A42;
 }
 
 @font-face {
@@ -40,12 +40,24 @@ p{padding: 0;margin: 0;}
 p,a,span,label{font-family: 'M PLUS 1', sans-serif;}
 h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
 
+/* agregamos animacion a details y sumary */
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
 /* UTILIDADES */
 .content{
   width: 1000px;
   margin: 0 auto;
   max-width: 95%;
 }
+
+.displayNone{display: none}
 
 .flex-c{
   display: flex;
@@ -57,7 +69,6 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
 }
 
 .btn{
-  background-color: green;
   padding: .5rem 1rem;
   display: block;
   text-align: center;
@@ -65,10 +76,11 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
   text-transform: uppercase;
   margin: 10px;
   border: none;
+  color: #fff;
   transition: background .5s ease;
 }
 .btn{
-  background-color:#8a8d15;
+  background-color: var(--yellowOragen);
 }
 
 
@@ -159,7 +171,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
    top: 49px;
 }
 
-@media screen and (min-width: 678px){
+@media screen and (min-width: 768px){
   .bars__icono{
     display: none;
   }
@@ -179,14 +191,14 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
     margin: 0;
     height: 100%;
     width: 100%;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
   .nav-links__li{
     display: inline-block;
   }
   .nav-links__a{
     width: auto;
-    padding: 0;
+    font-size: 1.6rem;
     display: inline;
     padding: 0 .5rem;
   }
@@ -236,7 +248,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Titillium Web', sans-serif !important}
   height: inherit;
   background-size: cover;
   background-position: center;
-  filter: brightness(.7) saturate(1.5);
+  filter: brightness(.5) saturate(1.5);
   position: relative;
 }
 .img__header.A::before{
@@ -511,7 +523,7 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
 
 .serviceHeader__title{
   margin: 0;
-  padding:3rem 1rem;
+  padding: 2rem 1rem;
   font-size: 2rem;
 }
 
@@ -632,7 +644,7 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
   height: 150vh;
 }
 
-@media screen and (min-width: 678px){
+@media screen and (min-width: 768px){
   .nosotros__flex{
     display: flex;
     justify-content: space-around;
@@ -642,7 +654,12 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
   }
 
   .serviceHeader--nosotros{
-    height: 99vh;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1024px){
+  .serviceHeader--nosotros{
+    height: 60vh;
   }
 }
 
@@ -663,15 +680,17 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
 
 
 /* contacto */
-.contacto{
-  display: flex;
+@media screen and (min-width: 768px){
+  .contacto{
+    display: flex;
+
+  }
 
 }
 
-
 .formulario{
-  width: 50%;
-  padding: 3rem;
+  width: 100%;
+  padding: 1rem;
 }
 
 .formulario__h2{
@@ -684,10 +703,15 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
   text-transform: capitalize;
 }
 .contacto__map{
-  width: 50%;
-  min-height: 00px;
+  min-height: 300px;
 }
 
+@media screen and (min-width: 678px){
+  .contacto__map,
+  .formulario{
+    width: 50%;
+  }
+}
 
 .formulario__email{
 
@@ -717,19 +741,112 @@ box-shadow: 0px 0px 10px 2px rgba(100,100,100,1);
 
 .formulario__btn{
   font-size: 1.6rem;
-  color: var(--oragen3);
+  color: var(--yellowOragen);
   background-color: transparent;
-  border: solid 5px var(--oragen3);
+  border: solid 5px var(--yellowOragen);
   padding: .5rem 5rem;
+  width: 90%;
 }
 .formulario__btn:hover{
-  background-color: var(--oragen3);
+  background-color: var(--oragen);
   color: #fff;
+  border-color: var(--oragen)
+}
+
+
+/* Producto en comprar */
+.prodIdivi{
+  background-color: #eee;
+}
+.prodIdivi__fondoWhite{
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.productos__content--prodIdivi{
+  padding: 0;
+  height: 60vh;
+  border-bottom: solid 2px #eee;
+}
+.productos__cantidad--prodIdivi{
+  color: #111;
+  font-weight: 600;
+}
+
+.prodIdivi__contentDescription{
+  border-bottom: solid 2px #eee;
+  padding: 1rem 0;
+}
+.prodIdivi__contentDescription--h2{
+  color: var(--oragen2);
+  font-size: 2rem;
+}
+.prodIdivi__contentDescription--p{
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+
+.prodIdivi__summary{
+  padding: 1rem 0;
+  border-bottom: solid 2px #eee;
+  font-size: 1.5rem;
+  color: var(--oragen3);
+}
+
+.prodIdivi__btn{
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+}
+
+.prodIdivi__btn:hover{
+  background-color: var(--oragen);
+}
+
+.prodIdivi__right{display: none;}
+
+@media screen and (min-width: 768px){
+  .prodIdivi__right{display: block;margin: 0 1rem;}
+  .productos__content--right{height: 60vh;border: solid 2px #ddd;}
+  .prodIdivi__mobileInfo{display: none;}
+  .prodIdivi__flex{display: flex;}
+  .prodIdivi__contentImg{height: 400px;}
+}
+
+
+.modal{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10,10,10,.7)
+}
+.modal__center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  text-align: center;
+}
+.modal__ventana{
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
 }
 
 
 
-
+/* services */
+.serviceHeader--serviceHTML{height: 65vh;}
+@media screen and (min-width: 1024px) {
+  .serviceHeader--serviceHTML{height: 50vh;}
+}
 /* animacion */
 
 .animateDown{
