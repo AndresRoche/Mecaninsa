@@ -1,158 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="application-name" content="Mecaninsa">
-  <meta name="author" content="Andres Roche, AndresRocheDavid@hotmail.com">
-  <meta name="keywords" content="Mecaninsa, caja sincronicas, servicios de toneria, reparacion de cajas de camiones, reparacion, reparacion de cajas de camiones,">
-  <meta name="descripción" content="Mecaninsa una empresa mecanica con ventas de piezas sincronicas y servicios de torneria, reparacion de cajas y camiones">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index,follow" />
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
-<meta name="abstract" content="">
-<meta name="topic" content="">
-<meta name="summary" content="">
-<meta name="Classification" content="Business">
-<meta name="designer" content="">
-<meta name="copyright" content="">
-<meta name="reply-to" content="AndresRocheDavid@hotmail.com">
-<meta name="owner" content="">
-<!-- <meta name="url" content="http://www.websiteaddrress.com"> -->
-<!-- <meta name="identifier-URL" content="http://www.websiteaddress.com"> -->
-<meta name="directory" content="submission">
-<meta name="category" content="">
-<meta name="coverage" content="Worldwide">
-<meta name="distribution" content="Global">
-<meta name="rating" content="General">
-<meta name="revisit-after" content="7 days">
-<!-- <meta http-equiv="Expires" content="0">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache"> -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Mecaninsa</title>
+  <%- include('partials/header.ejs')%>
 
-  <!-- google font -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet"> -->
-
-
-  <!-- Normalize -->
-  <link rel="stylesheet" href="css/normalize.css">
-
-  <!-- Master css -->
-  <link rel="stylesheet" href="css/master.css">
-</head>
-<body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="content">
-      <div class="nav__content">
-
-          <div class="nav__title">
-            <h1 class="nav__h1"><a href="index.html">Mecaninsa</a></h1>
-          </div>
-
-
-          <input type="checkbox" id="check" class="bars__input">
-          <label for="check" class="bars__icono flex-c"><span class="bars"></span></label>
-
-
-
-        <nav class="nav-links nav-links--mobile">
-          <ul class="nav-links__ul nav-links__ul--mobile">
-            <li class="nav-links__li nav-links__li--mobile">
-              <a href="index.html" class="nav-links__a nav-links__a--mobile">Home</a>
-            </li>
-            <li class="nav-links__li nav-links__li--mobile">
-              <a href="producto.html" class="nav-links__a nav-links__a--mobile">Productos</a>
-            </li>
-            <li class="nav-links__li nav-links__li--mobile">
-              <a href="nosotros.html" class="nav-links__a nav-links__a--mobile">Nosotros</a>
-            </li>
-            <li class="nav-links__li nav-links__li--mobile">
-              <a href="service.html" class="nav-links__a nav-links__a--mobile">Servicios</a>
-            </li>
-            <li class="nav-links__li nav-links__li--mobile">
-              <a href="conctatos.html" class="nav-links__a nav-links__a--mobile">Contactanos</a>
-            </li>
-          </ul><!--nav-links__ul-->
-        </nav><!--nav-links-->
-
-      </div><!--nav__content-->
-    </div><!--content-->
-  </nav>
-  <!-- NAV END -->
-
-
-<!-- HEADER -->
-<header class="carrusel">
-  <div class="carrusel__content anima" id="itemCarrusel-1">
-      <div class="carrusel__items">
-          <div class="img__header A">
-            <div class="header__1">
-              <div class="header__content content">
-                <h2 class="header__title">Somos</h2>
-                <p class="header__para">Una empresa automotris de reparaciones de cajas sincronicas</p>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="carrusel__flechas">
-        <a href="#itemCarrusel-3">
-          <i class="carrusel__desplazamiento"><</i>
-        </a>
-        <a href="#itemCarrusel-2">
-          <i class="carrusel__desplazamiento">></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="carrusel__content" id="itemCarrusel-2">
-      <div class="carrusel__items">
-        <div class="img__header B">
-          <div class="header__1">
-            <div class="header__content content">
-              <h2 class="header__title">Somos</h2>
-              <p class="header__para">Una empresa automotris de reparaciones de cajas sincronicas</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carrusel__flechas">
-        <a href="#itemCarrusel-1">
-          <i class="carrusel__desplazamiento"><</i>
-        </a>
-        <a href="#itemCarrusel-3">
-          <i class="carrusel__desplazamiento">></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="carrusel__content" id="itemCarrusel-3">
-      <div class="carrusel__items">
-        <div class="img__header C">
-          <div class="header__1">
-            <div class="header__content content">
-              <h2 class="header__title">Somos</h2>
-              <p class="header__para">Una empresa automotris de reparaciones de cajas sincronicas</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carrusel__flechas">
-        <a href="#itemCarrusel-2">
-          <i class="carrusel__desplazamiento"><</i>
-        </a>
-        <a href="#itemCarrusel-1">
-          <i class="carrusel__desplazamiento">></i>
-        </a>
-      </div>
-    </div>
-</header>
-<!-- HEADER END -->
 
 <!-- MAIN -->
 <main>
@@ -166,7 +14,7 @@
 
         <article class="productos__arct">
           <div class="productos__img">
-            <img src="public/img/product.webp" alt="">
+            <img src="img/product.webp" alt="">
           </div>
           <div class="productos__content">
             <div class="productos__content--arriba">
@@ -194,37 +42,7 @@
 
         <article class="productos__arct">
           <div class="productos__img">
-            <img src="public/img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
-
-            </div>
-
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
-
-
-
-
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="public/img/product.webp" alt="">
+            <img src="img/product.webp" alt="">
           </div>
           <div class="productos__content">
             <div class="productos__content--arriba">
@@ -254,7 +72,37 @@
 
         <article class="productos__arct">
           <div class="productos__img">
-            <img src="public/img/product.webp" alt="">
+            <img src="img/product.webp" alt="">
+          </div>
+          <div class="productos__content">
+            <div class="productos__content--arriba">
+              <p class="productos__marca">Fiesta Power</p>
+              <span class="productos__precio"><span>U$S </span>20</span>
+              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
+
+            </div>
+
+            <div class="productos__content--centro">
+              <h4 class="productos__title">Crucetas de Fiesta</h4>
+              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
+
+            </div>
+
+            <div class="productos__content--bajo">
+              <p class="productos__cantidad">disponible 4</p>
+              <a href="product.html" class="btn">Contactanos</a>
+            </div>
+
+          </div>
+        </article>
+
+
+
+
+
+        <article class="productos__arct">
+          <div class="productos__img">
+            <img src="img/product.webp" alt="">
           </div>
           <div class="productos__content">
             <div class="productos__content--arriba">
@@ -282,7 +130,7 @@
 
         <article class="productos__arct">
           <div class="productos__img">
-            <img src="public/img/product.webp" alt="">
+            <img src="img/product.webp" alt="">
           </div>
           <div class="productos__content">
             <div class="productos__content--arriba">
@@ -309,7 +157,7 @@
 
         <article class="productos__arct">
           <div class="productos__img">
-            <img src="public/img/product.webp" alt="">
+            <img src="img/product.webp" alt="">
           </div>
           <div class="productos__content">
             <div class="productos__content--arriba">
@@ -367,19 +215,19 @@
 
 
         <div class="service__items">
-          <img class="service__img" src="public/img/cardan.webp" alt="">
+          <img class="service__img" src="img/cardan.webp" alt="">
           <h4 class="service__title">Metalizaciones de Ejes Corredizos y de Mando</h4>
           <p class="service__paraf">Recuperamos las puntas de los ejes corredizos garantizando la duresa original de fabrica</p>
         </div>
 
         <div class="service__items">
-          <img class="service__img" src="public/img/cardan.webp" alt="">
+          <img class="service__img" src="img/cardan.webp" alt="">
           <h4 class="service__title">Rectificacion de Velocidades</h4>
           <p class="service__paraf">Rectificacion del cono dek diente en el sincronico</p>
         </div>
 
         <div class="service__items">
-          <img class="service__img" src="public/img/cardan.webp" alt="">
+          <img class="service__img" src="img/cardan.webp" alt="">
           <h4 class="service__title">transformacion de Ejes</h4>
           <p class="service__paraf">
             conversion de ejes para todo tipo de cajas sincronicas
@@ -387,7 +235,7 @@
         </div>
 
         <div class="service__items">
-          <img class="service__img" src="public/img/cardan.webp" alt="">
+          <img class="service__img" src="img/cardan.webp" alt="">
           <h4 class="service__title">Alineacion de Cardanes</h4>
           <p class="service__paraf">Reparacion de Palancas, Base de Palanca, Horquillas, Tapas y Cascos</p>
         </div>
@@ -396,13 +244,13 @@
 
       <div class="service__items">
         <!-- <h2 class="service__titulo">Cardanes</h2> -->
-        <img class="service__img" src="public/img/cardan.webp" alt="">
+        <img class="service__img" src="img/cardan.webp" alt="">
         <h4 class="service__title">Enderizacion de Cardanes</h4>
         <p class="service__paraf">Enderezamos y balanceamos por efecto termico.</p>
       </div>
 
       <div class="service__items">
-        <img class="service__img" src="public/img/cardan.webp" alt="">
+        <img class="service__img" src="img/cardan.webp" alt="">
         <h4 class="service__title">Cambio de orejas y espigas</h4>
         <p class="service__paraf">Realizamos cambio de orejas y espigas,recorte y alargue</p>
       </div>
@@ -411,12 +259,12 @@
 
       <!-- <h2 class="service__titulo">Reparacion y Rectificacion</h2> -->
       <div class="service__items">
-        <img class="service__img" src="public/img/cardan.webp" alt="">
+        <img class="service__img" src="img/cardan.webp" alt="">
         <h4 class="service__title">Rectificacion de volantes</h4>
         <p class="service__paraf">se metaliza la punta de las torres</p>
       </div>
       <div class="service__items">
-        <img class="service__img" src="public/img/cardan.webp" alt="">
+        <img class="service__img" src="img/cardan.webp" alt="">
         <h4 class="service__title">Reparacion de Puntas de ejes</h4>
         <p class="service__paraf">cambio y adaptacion de estria de puntas de ejes, ajuste de base del Rodamiento </p>
       </div>
