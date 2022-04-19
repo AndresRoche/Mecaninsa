@@ -1,0 +1,27 @@
+
+<%- include('../layouts/header.ejs')%>
+
+<!-- MAIN -->
+<main>
+
+  <section class="productos">
+     <div class="content">
+
+       <h3 class="productos__titulo">En Venta</h3>
+
+       <div class="productos__grid">
+
+         <% for (var i = 0; i < 20; i++) { %>
+           <%- include('../partials/producto.ejs')%>
+         <% } %>
+
+       </div>
+      </div>
+  </section>
+
+
+</main>
+<!-- MAIN END -->
+
+
+<%- include('../layouts/footer.ejs')%>

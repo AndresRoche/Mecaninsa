@@ -1,10 +1,51 @@
 {
   "dependencies": {
-    "ejs": "^3.1.6",
+    "admin-bro": "^3.2.5",
+    "admin-bro-expressjs": "^2.1.1",
+    "admin-bro-mongoose": "^0.5.2",
+    "argon2": "^0.28.5",
+    "cloudinary": "^1.29.0",
+    "connect-mongo": "^3.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.0.2",
     "express": "^4.17.3",
-    "morgan": "^1.10.0"
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
+    "fs-extra": "^10.0.1",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "tslib": "^2.3.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "nodemon": "^2.0.15"
-  }
+  },
+  "name": "mecaninsa",
+  "description": "web site for mecaninsa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresRoche/Mecaninsa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresRoche/Mecaninsa/issues"
+  },
+  "homepage": "https://github.com/AndresRoche/Mecaninsa#readme"
 }

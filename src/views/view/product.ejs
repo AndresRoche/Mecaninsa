@@ -1,0 +1,116 @@
+
+
+<%- include('../layouts/header.ejs')%>
+
+<!-- MAIN -->
+<main>
+
+    <section class="prodIdivi">
+      <div class="content">
+        <div class="prodIdivi__fondoWhite">
+          <div class="prodIdivi__flex">
+            <div class="prodIdivi__left">
+              <div class="prodIdivi__contentImg">
+                <img src="public/img/product.webp" alt="" class="prodIdivi__img">
+              </div>
+
+              <div class="prodIdivi__mobileInfo">
+                <div class="productos__content productos__content--prodIdivi">
+                  <div class="productos__content--arriba">
+                    <p class="productos__cantidad">nuevo</p>
+                    <h4 class="productos__title">Crucetas de Fiesta</h4>
+                    <p class="productos__marca">Fiesta Power</p>
+
+                  </div>
+
+                  <div class="productos__content--centro">
+                    <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
+                    <span class="productos__precio"><span>U$S </span>20</span>
+                    <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
+
+                  </div>
+
+                  <div class="productos__content--bajo">
+                    <p class="productos__cantidad productos__cantidad--prodIdivi">disponible 4</p>
+                    <button class="btn cont prodIdivi__btn">Contactanos</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="prodIdivi__contentDescription">
+                <h2 class="prodIdivi__contentDescription--h2">Descripción</h2>
+                <p class="prodIdivi__contentDescription--p">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="prodIdivi__contentDescription">
+                <h2 class="prodIdivi__contentDescription--h2">Contactanos a nuestro whatssap</h2>
+                <p class="prodIdivi__contentDescription--p">
+                  034313 ,3213 2123
+                </p>
+              </div>
+              <details class="prodIdivi__details">
+                <summary class="prodIdivi__summary">Mapa</summary>
+                <div class="map" id="map"></div>
+              </details>
+            </div>
+            <div class="prodIdivi__right">
+              <div class="productos__content productos__content--right">
+
+                  <p class="productos__cantidad">nuevo</p>
+                  <h4 class="productos__title">Crucetas de Fiesta</h4>
+                  <p class="productos__marca">Fiesta Power</p>
+
+
+
+
+                  <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
+                  <span class="productos__precio"><span>U$S </span>20</span>
+                  <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
+
+
+
+
+                  <p class="productos__cantidad productos__cantidad--prodIdivi">disponible 4</p>
+                  <button class="btn cont prodIdivi__btn">Contactanos</button>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="modal displayNone">
+      <div class="modal__center">
+        <div class="modal__ventana">
+          <div class="prodIdivi__contentDescription">
+            <h2 class="prodIdivi__contentDescription--h2">Descripción</h2>
+            <p class="prodIdivi__contentDescription--p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="btn cont prodIdivi__btn">volver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+</main>
+<!-- MAIN END -->
+
+
+<script type="text/javascript">
+  modal = document.querySelector(".modal");
+  document.querySelectorAll('.cont').forEach(btn => {
+    btn.addEventListener('click', (e) =>{
+      modal.classList.toggle('displayNone')
+    });
+  });
+</script>
+
+<%- include('../layouts/footer.ejs')%>

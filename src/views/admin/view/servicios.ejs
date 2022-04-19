@@ -1,0 +1,61 @@
+
+<%- include('../layouts/header.ejs')%>
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+
+<div class="mr-auto mb-2">
+<a href="index.html">Admin</a> / <a href="Servicios.html">Servicios</a>
+</div>
+
+<div class="d-flex justify-content-between mb-2">
+  <h2>List Productos</h2>
+  <div class="">
+    <a href="#" class="btn btn-primary btn-lg"> Create New</a>
+    <a href="#" class="btn btn-outline-primary btn-lg">Filter</a>
+  </div>
+</div>
+
+<div class="p-3 mb-2 bg-white">
+    <div class="p-3 mb-2 bg-light row">
+
+        <!-- check -->
+        <div class="col form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+
+        <div class="col">Titulo</div>
+
+        <div class="col">Descripcion</div>
+
+        <div class="col">image</div>
+        <div class="col"></div>
+
+    </div>
+
+    <div class="row p-3 mb-2">
+      <!-- check -->
+      <div class="col form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      </div>
+
+      <div class="col">Retificamos piñones</div>
+
+      <div class="col">se rectifica los piñones para que entre mas al sincronico</div>
+      <div class="col"></div>
+      <div class="col">
+        <div class="row">
+          <a href="#" class="ml-1 col btn btn-outline-danger">Delete</a>
+          <a href="#" class="col btn btn-outline-primary">Edit</a>
+
+        </div>
+      </div>
+
+    </div>
+
+</div>
+</div>
+<!-- /.container-fluid -->
+
+<%- include('../layouts/footer.ejs')%>

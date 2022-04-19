@@ -1,0 +1,47 @@
+<%- include('../layouts/header.ejs')%>
+
+<!-- MAIN -->
+<main>
+
+
+
+<section class="serviceHeader serviceHeader--serviceHTML">
+  <div class="serviceHeader__div">
+    <div class="serviceHeader__content">
+    <div class="content">
+
+        <h3 class="serviceHeader__title">Servicio de reparacion de cajas sincronicas</h3>
+        <p class="serviceHeader__paraf">
+          Desarmado, reparacion y armado de todo tipo de cajas sincronicas tanto para vehiculos de carga como particulares, y tambio revios completa de vehiculos de carga, carnades, disco, caja sincronica, el palanqui etc.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="service">
+  <div class="content">
+    <h1 class="service__titulo">Servicios</h1>
+    <section class="service__grid">
+
+
+      <% for (var i = 0; i < 20; i++) { %>
+        <%- include('../partials/services-partials.ejs')%>
+      <%}%>
+
+
+    </section>
+
+
+  </div>
+</section>
+
+</main>
+
+
+
+
+<%- include('../layouts/footer.ejs')%>

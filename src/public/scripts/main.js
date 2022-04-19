@@ -6,9 +6,9 @@
 //
 // })
 
-const productosTitulo = document.querySelector('.productos__titulo');
-const serviceHeaderContent = document.querySelector('.serviceHeader__content');
-const serviceTitulo = document.querySelector('.service__titulo');
+const productosTitulo = document.querySelector('.productos__titulo') || null;
+const serviceHeaderContent = document.querySelector('.serviceHeader__content') || null;
+const serviceTitulo = document.querySelector('.service__titulo') || null;
 
 
 let animationUser = [];
@@ -30,5 +30,7 @@ let observer = new IntersectionObserver(animacionFunction,{
 })
 
 animationUser.forEach(anima => {
-  observer.observe(anima);
+  if(anima !== null) {
+    observer.observe(anima);
+  }
 });

@@ -1,5 +1,5 @@
 
-  <%- include('partials/header.ejs')%>
+  <%- include('layouts/header.ejs')%>
 
 
 <!-- MAIN -->
@@ -12,179 +12,16 @@
 
       <div class="productos__grid">
 
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
 
-            </div>
+        <% for (var i = 0; i < 6; i++) { %>
+          <%- include('partials/producto.ejs')%>
+        <%}%>
 
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
-
-
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
-
-            </div>
-
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
-
-
-
-
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
-
-            </div>
-
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
-
-
-
-
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
-
-            </div>
-
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
-
-
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
-
-            </div>
-
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
-
-        <article class="productos__arct">
-          <div class="productos__img">
-            <img src="img/product.webp" alt="">
-          </div>
-          <div class="productos__content">
-            <div class="productos__content--arriba">
-              <p class="productos__marca">Fiesta Power</p>
-              <span class="productos__precio"><span>U$S </span>20</span>
-              <span class="productos__precio productos__precio--bs"><span>Bs. </span>80</span>
-
-            </div>
-
-            <div class="productos__content--centro">
-              <h4 class="productos__title">Crucetas de Fiesta</h4>
-              <p class="productos__para">Piñon de retro - modelo 432 - 20 dientes</p>
-
-            </div>
-
-            <div class="productos__content--bajo">
-              <p class="productos__cantidad">disponible 4</p>
-              <a href="product.html" class="btn">Contactanos</a>
-            </div>
-
-          </div>
-        </article>
-
+      </div>
     </div>
 
-  <div class="productos__btn--content">
-  <a href="producto.html" class="btn productos__btn">Ver mas</a>
+    <div class="productos__btn--content">
+      <a href="/productos" class="btn productos__btn">Ver mas</a>
 
   </div>
 
@@ -213,67 +50,14 @@
     <h3 class="service__titulo">Servicios</h3>
     <section class="service__grid">
 
-
-        <div class="service__items">
-          <img class="service__img" src="img/cardan.webp" alt="">
-          <h4 class="service__title">Metalizaciones de Ejes Corredizos y de Mando</h4>
-          <p class="service__paraf">Recuperamos las puntas de los ejes corredizos garantizando la duresa original de fabrica</p>
-        </div>
-
-        <div class="service__items">
-          <img class="service__img" src="img/cardan.webp" alt="">
-          <h4 class="service__title">Rectificacion de Velocidades</h4>
-          <p class="service__paraf">Rectificacion del cono dek diente en el sincronico</p>
-        </div>
-
-        <div class="service__items">
-          <img class="service__img" src="img/cardan.webp" alt="">
-          <h4 class="service__title">transformacion de Ejes</h4>
-          <p class="service__paraf">
-            conversion de ejes para todo tipo de cajas sincronicas
-          </p>
-        </div>
-
-        <div class="service__items">
-          <img class="service__img" src="img/cardan.webp" alt="">
-          <h4 class="service__title">Alineacion de Cardanes</h4>
-          <p class="service__paraf">Reparacion de Palancas, Base de Palanca, Horquillas, Tapas y Cascos</p>
-        </div>
-
-
-
-      <div class="service__items">
-        <!-- <h2 class="service__titulo">Cardanes</h2> -->
-        <img class="service__img" src="img/cardan.webp" alt="">
-        <h4 class="service__title">Enderizacion de Cardanes</h4>
-        <p class="service__paraf">Enderezamos y balanceamos por efecto termico.</p>
-      </div>
-
-      <div class="service__items">
-        <img class="service__img" src="img/cardan.webp" alt="">
-        <h4 class="service__title">Cambio de orejas y espigas</h4>
-        <p class="service__paraf">Realizamos cambio de orejas y espigas,recorte y alargue</p>
-      </div>
-
-
-
-      <!-- <h2 class="service__titulo">Reparacion y Rectificacion</h2> -->
-      <div class="service__items">
-        <img class="service__img" src="img/cardan.webp" alt="">
-        <h4 class="service__title">Rectificacion de volantes</h4>
-        <p class="service__paraf">se metaliza la punta de las torres</p>
-      </div>
-      <div class="service__items">
-        <img class="service__img" src="img/cardan.webp" alt="">
-        <h4 class="service__title">Reparacion de Puntas de ejes</h4>
-        <p class="service__paraf">cambio y adaptacion de estria de puntas de ejes, ajuste de base del Rodamiento </p>
-      </div>
-
+      <% for (var i = 0; i < 8; i++) { %>
+        <%- include('partials/services-partials.ejs')%>
+      <%}%>
 
     </section>
 
     <div class="service__btn--content">
-      <a href="#" class="service__btn btn">Ver mas</a>
+      <a href="/services" class="service__btn btn">Ver mas</a>
     </div>
   </div>
 </section>
